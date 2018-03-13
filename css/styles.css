@@ -31,6 +31,10 @@
     margin: 0 10px 10px 10px;
     box-shadow: 1px 0px 7px 0px #c5c5c5;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
  }
 
 .box:last-of-type {
@@ -109,7 +113,7 @@ h2 {
 }
 
 .header h1 {
-	font-size: 6vw;
+	font-size: 5.5vw;
 }
 
 .header p {
@@ -122,60 +126,23 @@ h2 {
 }
 
 .projects {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-	justify-content: center;
-	align-items: flex-start;
 	margin: 15px 0;
 }
 
 /****************************************************************/
 
-@media only screen and (min-width: 800px)
+@media only screen and (min-width: 750px)
 {
-	html, body {
-		font-size: 20px;
-	}
-
-	.header h1 {
-	font-size: 3vw;
-}
-
-	.projects {
-		flex-direction: row;
-	}
-
-	h2 {
-		font-size: 3vw;
-	}
-	
-	.box {
-		width: 20%;
-	}
-
 	.about {
 		flex-direction: row;
 	}
 
-	.about img {
-		width: 15%;
-		height: 320px;
-		border-radius: 50%;
+	body {
+		font-size: 19px;
 	}
 
-	.description {
-		width: 40%;
-	}
-
-	.content {
-		margin-left: 50px;
-	}
-
-	.header {
-		background-image: url(../img/header.png);
-		background-size: cover;
-		background-position: center;
+	.box {
+		width: 20%;
 	}
 
 	.contact {
@@ -184,14 +151,47 @@ h2 {
 		margin: 15px auto 0 auto;
 	}
 
+	.content {
+		margin-left: 50px;
+	}
+
 	.first-group {
 		display: flex;
-		width: 93%;
+		width: 90%;
+	}
+
+	h2 {
+		font-size: 3vw;
+	}
+	
+	.header {
+		background-image: url(../img/header.png);
+		background-size: cover;
+		background-position: center;
+	}
+
+	.header h1 {
+		font-size: 3vw;
 	}
 
 	.name-input {
-		margin-right: 10px;
+		margin-right: 25px;
 	}
- 	
+
+	.projects {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: flex-start;
+	}
+
+}
+
+@media only screen and (min-width: 1000px)
+{
+	.description {
+		width: 50%;
+	}
+
 }
 
